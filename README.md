@@ -38,12 +38,12 @@ PHP script that allows to secure store the API client-id and client-secret and m
 Pending..
 
 ## Frameworks Used
-Quasar 0.15: [Oficial Documentation](http://quasar-framework.org)
-Laravel 5.6: [Oficial Documentation](https://laravel.com/docs/5.6)
+* Quasar 0.15: [Oficial Documentation](http://quasar-framework.org)
+* Laravel 5.6: [Oficial Documentation](https://laravel.com/docs/5.6)
 
 ## GraphQL
-Oficial Site: [GraphQL Info](http://graphql.org)
-Laravel GraphQL implementation: [Folkloreatelier/laravel-graphql](https://github.com/Folkloreatelier/laravel-graphql)
+* Oficial Site: [GraphQL Info](http://graphql.org)
+* Laravel GraphQL implementation: [Folkloreatelier/laravel-graphql](https://github.com/Folkloreatelier/laravel-graphql)
 
 ## Contributing
 It would be great if you could contribute by adding new features, fixing bugs or showing us the steps to reproduce bugs.
