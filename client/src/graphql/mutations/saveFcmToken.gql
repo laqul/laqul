@@ -1,0 +1,5 @@
+mutation saveFcmToken ($token: String!) {
+	saveFcmToken (token: $token) {
+		success
+	}
+}

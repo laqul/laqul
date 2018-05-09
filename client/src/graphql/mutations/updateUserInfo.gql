@@ -1,0 +1,5 @@
+mutation updateUserInfo ($name: String!) {
+	updateUserInfo (name: $name) {
+		name
+	}
+}

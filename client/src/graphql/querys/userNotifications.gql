@@ -1,0 +1,10 @@
+query userNotifications ($limit: Int) {
+  userNotifications (limit: $limit) {
+    type
+    title
+    body
+    color
+    payload
+    created_at
+  }
+}

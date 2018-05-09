@@ -1,0 +1,17 @@
+query initialInfo ($limit: Int) {
+	userInfo {
+    id
+		name
+		email
+    avatar
+    timezone
+	}
+  userNotifications (limit: $limit) {
+    type
+    title
+    body
+    color
+    payload
+    created_at
+  }
+}

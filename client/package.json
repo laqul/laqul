@@ -1,0 +1,57 @@
+{
+  "name": "laqul",
+  "version": "1.0.0",
+  "description": "Dashboard starter kit",
+  "productName": "Laqul",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": {
+    "name": "Fabian VR",
+    "email": "laqul.app.kit@gmail.com"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.1.12",
+    "apollo-client": "^2.2.8",
+    "apollo-link-context": "^1.0.7",
+    "apollo-link-error": "^1.0.7",
+    "apollo-link-http": "^1.5.3",
+    "axios": "^0.18.0",
+    "croppie": "^2.6.2",
+    "firebase": "^4.12.1",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.8.0",
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.16",
+    "vue-apollo": "^3.0.0-beta.5",
+    "vue-i18n": "^7.3.3",
+    "vuelidate": "^0.6.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.3.0",
+    "node-sass": "^4.8.3",
+    "quasar-cli": "^0.15.14",
+    "sass-loader": "^6.0.7"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
