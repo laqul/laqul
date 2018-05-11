@@ -17,7 +17,10 @@
 
 > A complete starter kit that allows you create amazing apps that look native thanks to the Quasar Framework. Powered by an API developed in Laravel Framework using the easy GraphQL query language. And ready to use the Google Firebase features.
 
-[![Laqu-l Screen](https://laqul.github.io/assets/img/account.jpg)](https://laqul.github.io)
+### Login Screen
+[![Laqu-l Login Screen](https://laqul.github.io/assets/img/login.jpg)](https://laqul.github.io)
+### Admin Screen
+[![Laqu-l Admin Screen](https://laqul.github.io/assets/img/account.jpg)](https://laqul.github.io)
 
 
 # Features
