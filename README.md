@@ -55,9 +55,11 @@ PHP script that allows securely storing the API client-id and client-secret and 
 * composer
 * git
 
-## Instalation
+## Installation
 
 ### API Setup
+
+Prepare the Laravel API for the initial setup
 
 * In your terminal type:
 ```
@@ -68,8 +70,6 @@ cp .env.example .env
 php artisan key:generate
 php artisan passport:keys
 ```
-This prepare the Laravel API for the initial setup
-
 * Create a data base using terminal or phpmyadmin
 * Put your data connection in laqul/api/.env file:
 ```
@@ -103,7 +103,7 @@ FIREBASE_SERVICE_ACCOUNT=YOUR_FIREBASE_SERVICE_ACCOUNT
 ```
 FIREBASE_AUD=YOUR_FIREBASE_TOKEN_AUD
 ```
-* Into the Firebase project settings in Cloud messaging option get the server key and the sender id and paste it in laqul/api/.env file
+* Into the Firebase project settings in Cloud Messaging option get the server key and the sender id and paste it in laqul/api/.env file
 ```
 FCM_SERVER_KEY=YOUR_FCM_SERVER_KEY
 FCM_SENDER_ID=YOUR_FCM_SENDER_ID
