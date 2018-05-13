@@ -13,7 +13,7 @@ export const _updateTimezone = (initialInfo) => {
       }
     }).then(response => {
       store.commit('session/setUserTimezone', response.data.updateUserInfo[0].timezone)
-      return Promise.resolve(response.data.userInfo[0].timezone)
+      return Promise.resolve(response.data.updateUserInfo[0].timezone)
     })
   }
   return Promise.resolve(initialInfo.userInfo[0].timezone)
