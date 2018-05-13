@@ -40,7 +40,7 @@ class UpdateUserInfoMutation extends Mutation
     {
         return [
             'name' => 'string|min:4|max:30',
-            'timezone' => 'string|min:2|max:50'
+            'timezone' => 'string|min:2|max:50|in:' . implode(',', \DateTimeZone::listIdentifiers())
         ];
     }
 
