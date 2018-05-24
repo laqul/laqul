@@ -53,7 +53,7 @@ Dashboard with a basic features developed with Quasar Framework
 ### Client-Backend
 PHP script that allows securely storing the API client-id and client-secret and managing the OAUTH2 authentication and refresh tokens process
 
-## Requeriments
+## Requirements
 
 * LAMP Server
 * Terminal
