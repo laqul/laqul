@@ -53,14 +53,14 @@ Dashboard with a basic features developed with Quasar Framework
 ### Client-Backend
 PHP script that allows securely storing the API client-id and client-secret and managing the OAUTH2 authentication and refresh tokens process
 
-## Requeriments
+## Requirements
 
 * LAMP Server
 * Terminal
 * node
 * npm
 * quasar-cli
-* composer
+* [composer](https://github.com/composer/composer)
 * git
 
 ## Installation
@@ -78,7 +78,12 @@ cp .env.example .env
 php artisan key:generate
 php artisan passport:keys
 ```
-* Create a data base using terminal or phpmyadmin
+* Create a database using [phpmyadmin](https://www.phpmyadmin.net/) or terminal:
+```
+mysql -u root -e "create database testdb"; 
+```
+If you have an existing mysql password, add -p above. You will be prompted for your password.
+
 * Put your data connection in laqul/api/.env file:
 ```
 DB_DATABASE=YOUR_DATABASE
