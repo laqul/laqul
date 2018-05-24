@@ -78,7 +78,12 @@ cp .env.example .env
 php artisan key:generate
 php artisan passport:keys
 ```
-* Create a data base using terminal or phpmyadmin
+* Create a database using [phpmyadmin](https://www.phpmyadmin.net/) or terminal:
+```
+mysql -u root -e "create database testdb"; 
+```
+If you have an existing mysql password, add -p above. You will be prompted for your password.
+
 * Put your data connection in laqul/api/.env file:
 ```
 DB_DATABASE=YOUR_DATABASE
