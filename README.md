@@ -60,7 +60,7 @@ PHP script that allows securely storing the API client-id and client-secret and 
 * node
 * npm
 * quasar-cli
-* composer
+* [composer](https://github.com/composer/composer)
 * git
 
 ## Installation
