@@ -1,73 +1,70 @@
-// This is just an example,
-// so you can safely delete all default props below
-
 export default {
   errors: {
     backend: {
-      undefined: 'Ocurrio un error desconocido'
+      undefined: 'An unknown backend error occurred'
     },
     graphql: {
-      undefined: 'Ocurrio un error desconocido'
+      undefined: 'An unknown graphql error occurred'
     },
     firebase: {
-      try_again: 'Ocurrio un error temporal, intente de nuevo por favor.'
+      try_again: 'An unknown firebase error occurred'
     }
   },
   layouts: {
     authentication: {
       app_title: 'Laqul',
-      close: 'Cerrar',
-      terms_conditions: 'Terminos y Condiciones'
+      close: 'Close',
+      terms_conditions: 'Terms and Conditions'
     },
     dashboard: {
       app_title: 'Laqul',
-      notifications: 'Notificaciones',
-      my_account: 'Mi Cuenta',
-      exit: 'Salir',
-      exit_all: 'Salir de todos los dispositivos',
-      sections: 'Secciones',
+      notifications: 'Notifications',
+      my_account: 'My Account',
+      exit: 'Exit',
+      exit_all: 'Exit All',
+      sections: 'Sections',
       dashboard: 'Dashboard',
-      dashboard_sub: 'Estadisticas',
-      unblock: 'Desbloquear',
-      activate: 'Activarlas',
-      close: 'Cerrar',
-      activate_notifications: 'Aun no activas las notificaciones',
-      blocked_notifications: 'Tienes las notificaciones bloqueadas'
+      dashboard_sub: 'Statistics',
+      unblock: 'Unblock',
+      activate: 'Activate',
+      close: 'Close',
+      activate_notifications: 'Activate Notifications',
+      blocked_notifications: 'Block Notifications'
     },
     user: {
       avatar: 'Avatar',
-      info: 'Informacion',
+      info: 'Information',
       password: 'Password'
     }
   },
   pages: {
     errors: {
       e404: {
-        title: 'Esta pagina no existe',
-        message: 'Ups esta pagina no existe...(404)',
-        go_back: 'Regresar'
+        title: 'This page doesn\'t exist',
+        message: 'Opps this page doesn\'t exist...(404)',
+        go_back: 'Go Back'
       }
     },
     authentication: {
       login: {
-        title: 'Acceso'
+        title: 'Access'
       },
       email_verification: {
-        title: 'Registro'
+        title: 'Register'
       },
       registration: {
-        title: 'Registro'
+        title: 'Register'
       },
       forgot_password: {
-        title: 'Restablecimiento de password'
+        title: 'Reset your password'
       },
       reset_password: {
-        title: 'Restablecimiento de password'
+        title: 'Reset your password'
       },
       social_login: {
         title: 'Login Social',
-        loading_text: 'Accediendo con tu red social...',
-        social_auth: 'Accediendo con tu red social'
+        loading_text: 'Loading...',
+        social_auth: 'Accessing your social network'
       }
     },
     dashboard: {
@@ -75,110 +72,110 @@ export default {
         title: 'Dashboard Home'
       },
       user_avatar: {
-        title: 'Elige una imagen para tu perfil'
+        title: 'Choose an image for your profile'
       },
       user_info: {
-        title: 'Informacion basica'
+        title: 'Basic Information'
       },
       user_password: {
-        title: 'Cambia tu password',
-        change_password_unavailable: 'El cambio de password no esta disponible debido a que accediste con una plataforma social.'
+        title: 'Change your password',
+        change_password_unavailable: 'You can\t change your password'
       }
     }
   },
   components: {
     authentication: {
       email_verification: {
-        title: 'Comienza tu registro',
-        introduce_email: 'Escribe tu email',
+        title: 'Begin your registration',
+        introduce_email: 'Enter your email',
         email: 'Email',
-        invalid_email: 'Tu email no es correcto',
-        verify_email: 'Verificar email',
-        go_login: 'Ir a login',
-        incorrect_input: 'Revisa tus datos',
-        link_sent: 'Te enviamos un link para tu registro, si no lo encuentras revisa tu bandeja de correo no deseado o spam.'
+        invalid_email: 'Your email is invalid',
+        verify_email: 'Verify your email',
+        go_login: 'Back to Login',
+        incorrect_input: 'Incorrect input.',
+        link_sent: 'We sent a link to your mailbox.  If you can not find it check your junk mail or spam.'
       },
       forgot_password: {
-        title: 'Recuperacion de acceso',
-        introduce_email: 'Escribe tu email',
+        title: 'Recover your account',
+        introduce_email: 'Enter your email',
         email: 'Email',
-        invalid_email: 'Tu email no es correcto',
-        sendme_email: 'Enviar link de restablecimiento',
-        go_login: 'Ir a login',
-        incorrect_input: 'Revisa tu datos',
-        link_sent: 'Te enviamos un link para recuperar tu acceso, si no lo encuentras revisa tu bandeja de correo no deseado o spam.'
+        invalid_email: 'Your email is not correct',
+        sendme_email: 'Reset your account',
+        go_login: 'Back to Login',
+        incorrect_input: 'Incorrect Input',
+        link_sent: 'We sent a link to your mailbox. if you can not find it check your junk mail or spam.'
       },
       login: {
-        title: 'Acceso',
-        introduce_email: 'Escribe tu email',
-        invalid_email: 'Tu email no es correcto',
+        title: 'Access',
+        introduce_email: 'Enter your email',
+        invalid_email: 'This email is invalid',
         email: 'Email',
-        introduce_password: 'Escribe tu password',
-        invalid_password: 'Formato de password incorrecto',
+        introduce_password: 'Enter your password',
+        invalid_password: 'This password is invalid',
         password: 'Password',
-        login: 'Acceder',
-        register: 'Registrarme',
-        forgot_password: 'Olvide mi password',
-        incorrect_input: 'Revisa tus datos',
-        invalid_credentials: 'Sus credenciales de acceso son incorrectas.',
-        facebook: 'Accede con Facebook',
-        google: 'Accede con Google'
+        login: 'Login',
+        register: 'Register',
+        forgot_password: 'Forgot Password',
+        incorrect_input: 'Your input is incorrect',
+        invalid_credentials: 'Your credentials are invalid',
+        facebook: 'Login with Facebook',
+        google: 'Login with Google'
       },
       registration: {
-        title: 'Registro',
-        invalid_name: 'Nombre no valido',
-        name: 'Nombre',
-        introduce_name: 'Introduce tu nombre',
-        invalid_password: 'Formato de password incorrecto',
+        title: 'Register',
+        invalid_name: 'Invalid Name',
+        name: 'Name',
+        introduce_name: 'Screen name',
+        invalid_password: 'The password format is incorrect',
         password: 'Password',
-        password_mismatch: 'El password no coincide',
-        password_confirmation: 'Repite el password',
-        terms_conditions: 'Acepto los terminos y condiciones',
-        register: 'Registrarme',
-        go_login: 'Ir a login',
-        invalid_url: 'Su url de registro no es valida',
-        incorrect_input: 'Revise sus datos',
-        must_accept_terms: 'Debe aceptar los teminos y condiciones',
-        successful_registration: 'Registro exitoso, accediendo...'
+        password_mismatch: 'Your password is mismatched',
+        password_confirmation: 'Confirm your password',
+        terms_conditions: 'Accept terms and conditions',
+        register: 'Register',
+        go_login: 'Back to Login',
+        invalid_url: 'This url is invalid',
+        incorrect_input: 'Incorrect input',
+        must_accept_terms: 'You must accept terms and conditions',
+        successful_registration: 'You have successfully registered'
       },
       reset_password: {
-        title: 'Restablecimiento de password',
-        invalid_password: 'Formato de password incorrecto',
+        title: 'Reset your password',
+        invalid_password: 'Password format invalid',
         password: 'Password',
-        password_mismatch: 'El password no coincide',
-        password_confirmation: 'Repita el password',
-        reset: 'Restablecer',
-        go_login: 'Ir a login',
-        invalid_url: 'Su url de restablecimiento no es valida',
-        incorrect_input: 'Revise sus datos',
-        successful_reset: 'Su password fu restablecido, accediendo...'
+        password_mismatch: 'Password mismatch',
+        password_confirmation: 'Confirm your password',
+        reset: 'Reset',
+        go_login: 'Back to Login',
+        invalid_url: 'This url is invalid',
+        incorrect_input: 'Incorrect input',
+        successful_reset: 'Your password has successfully been reset'
       }
     },
     dashboard: {
       user_avatar: {
-        select_image: 'Elige tu imagen',
-        change_image: 'Otra imagen',
-        save: 'Guardar',
-        avatar_updated: 'Tu imagen de perfil fue actualizada.'
+        select_image: 'Choose your image',
+        change_image: 'Change Image',
+        save: 'Save',
+        avatar_updated: 'Your avatar has been updated.'
       },
       user_info: {
-        title: 'Informacion de usuario',
-        invalid_name: 'Nombre no valido',
-        name: 'Nombre',
-        update: 'Actualizar',
-        incorrect_input: 'Revise sus datos por favor.',
-        info_updated: 'Informacion actualizada'
+        title: 'User information',
+        invalid_name: 'Invalid name',
+        name: 'Name',
+        update: 'Update',
+        incorrect_input: 'Incorrect input.',
+        info_updated: 'Your information has been updated'
       },
       user_password: {
-        title: 'Cambio de password',
-        current_password: 'Password actual',
-        new_password: 'Nuevo password',
-        password_confirmation: 'Repite el password',
-        invalid_password: 'Formato de password incorrecto',
-        password_mismatch: 'El password no coincide',
-        change: 'Cambiar',
-        incorrect_input: 'Revise sus datos por favor.',
-        password_updated: 'Su password fue actualizado'
+        title: 'Change your password',
+        current_password: 'Current Password',
+        new_password: 'New Password',
+        password_confirmation: 'Password Confirmation',
+        invalid_password: 'Invalid Password',
+        password_mismatch: 'Password Mismatch',
+        change: 'Change',
+        incorrect_input: 'Incorrect input.',
+        password_updated: 'Password updated'
       }
     }
   }

@@ -1,3 +1,5 @@
+![Laqu-l logo](https://laqul.github.io/assets/img/logo.png)
+
 # Laqu-l
 
 <a href="https://github.com/quasarframework/quasar">
@@ -14,6 +16,12 @@
 </a>
 
 > A complete starter kit that allows you create amazing apps that look native thanks to the Quasar Framework. Powered by an API developed in Laravel Framework using the easy GraphQL query language. And ready to use the Google Firebase features.
+
+### Login Screen
+[![Laqu-l Login Screen](https://laqul.github.io/assets/img/login.jpg)](https://laqul.github.io)
+### Admin Screen
+[![Laqu-l Admin Screen](https://laqul.github.io/assets/img/account.jpg)](https://laqul.github.io)
+
 
 # Features
 * Multilanguage capability
@@ -45,19 +53,24 @@ Dashboard with a basic features developed with Quasar Framework
 ### Client-Backend
 PHP script that allows securely storing the API client-id and client-secret and managing the OAUTH2 authentication and refresh tokens process
 
-## Requeriments
+## Requirements
 
 * LAMP Server
 * Terminal
 * node
 * npm
 * quasar-cli
-* composer
+* [composer](https://github.com/composer/composer)
 * git
 
-## Instalation
+## Installation
+
+### Video Tutorial
+[![Video Tutorial Instalation And Setup](https://img.youtube.com/vi/x5yF3bAbPzY/0.jpg)](https://youtu.be/x5yF3bAbPzY)
 
 ### API Setup
+
+Prepare the Laravel API for the initial setup
 
 * In your terminal type:
 ```
@@ -68,9 +81,12 @@ cp .env.example .env
 php artisan key:generate
 php artisan passport:keys
 ```
-This prepare the Laravel API for the initial setup
+* Create a database using [phpmyadmin](https://www.phpmyadmin.net/) or terminal:
+```
+mysql -u root -e "create database testdb"; 
+```
+If you have an existing mysql password, add -p above. You will be prompted for your password.
 
-* Create a data base using terminal or phpmyadmin
 * Put your data connection in laqul/api/.env file:
 ```
 DB_DATABASE=YOUR_DATABASE
@@ -103,7 +119,7 @@ FIREBASE_SERVICE_ACCOUNT=YOUR_FIREBASE_SERVICE_ACCOUNT
 ```
 FIREBASE_AUD=YOUR_FIREBASE_TOKEN_AUD
 ```
-* Into the Firebase project settings in Cloud messaging option get the server key and the sender id and paste it in laqul/api/.env file
+* Into the Firebase project settings in Cloud Messaging option get the server key and the sender id and paste it in laqul/api/.env file
 ```
 FCM_SERVER_KEY=YOUR_FCM_SERVER_KEY
 FCM_SENDER_ID=YOUR_FCM_SENDER_ID
