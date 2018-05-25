@@ -80,9 +80,9 @@ php artisan passport:keys
 ```
 * Create a database using [phpmyadmin](https://www.phpmyadmin.net/) or terminal:
 ```
-mysql -u root -e "create database testdb"; 
+mysql -e "create database YOUR_DATABASE" -u YOUR_DATABASE_USER -p YOUR_DATABASE_PASSWORD;
 ```
-If you have an existing mysql password, add -p above. You will be prompted for your password.
+Replace the bold text above with your new database name, username and password.
 
 * Put your data connection in laqul/api/.env file:
 ```
