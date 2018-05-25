@@ -65,6 +65,9 @@ PHP script that allows securely storing the API client-id and client-secret and 
 
 ## Installation
 
+### Video Tutorial
+[![Video Tutorial Instalation And Setup](https://img.youtube.com/vi/x5yF3bAbPzY/0.jpg)](https://youtu.be/x5yF3bAbPzY)
+
 ### API Setup
 
 Prepare the Laravel API for the initial setup
