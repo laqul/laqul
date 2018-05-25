@@ -13,6 +13,14 @@ export default [
   },
 
   {
+    path: '/bikes',
+    component: () => import('layouts/Dashboard'),
+    children: [
+      { path: '', component: () => import('pages/bikes') }
+    ]
+  },
+
+  {
     path: '/Panel',
     caseSensitive: true,
     pathToRegexOptions: { strict: true, sensitive: true },
