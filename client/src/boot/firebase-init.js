@@ -40,7 +40,7 @@ const authState = () => {
 }
 
 const serviceWorker = () => {
-  if (config.firebase.fcm.enabled && swCompatibility()) {
+  if (config.firebase.enabled && config.firebase.fcm.enabled && swCompatibility()) {
     return navigator.serviceWorker.register('statics/firebase-messaging-sw.js')
       .then(registration => {
         firebase.messaging().useServiceWorker(registration)

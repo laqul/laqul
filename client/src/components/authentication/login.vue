@@ -14,8 +14,8 @@
     </q-card-main>
     <q-card-separator />
     <q-card-main class="flex flex-center">
-      <q-btn :loading="loading" class="q-mb-md q-mr-md" rounded icon="fab fa-facebook-f" size="sm" color="blue-10" text-color="white" @click="facebook" :label="$t('components.authentication.login.facebook')"/>
-      <q-btn :loading="loading" class="q-mb-md q-mr-md" rounded icon="fab fa-google" size="sm" color="deep-orange-14" text-color="white" @click="google" :label="$t('components.authentication.login.google')"/>
+      <q-btn v-if="$config.socialLogin.facebook" :loading="loading" class="q-mb-md q-mr-md" rounded icon="fab fa-facebook-f" size="sm" color="blue-10" text-color="white" @click="facebook" :label="$t('components.authentication.login.facebook')"/>
+      <q-btn v-if="$config.socialLogin.google" :loading="loading" class="q-mb-md q-mr-md" rounded icon="fab fa-google" size="sm" color="deep-orange-14" text-color="white" @click="google" :label="$t('components.authentication.login.google')"/>
     </q-card-main>
     <q-card-separator />
     <q-card-actions>

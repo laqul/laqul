@@ -12,7 +12,7 @@ import LOGOUT from '../graphql/mutations/logout.gql'
 var messagingInstance = null
 
 const deleteFcmToken = () => {
-  if (!config.firebase.fcm.enabled || store.state.session.cloudMessaging.notificationsBlocked) {
+  if (!config.firebase.enabled || !config.firebase.fcm.enabled || store.state.session.cloudMessaging.notificationsBlocked) {
     return Promise.resolve(true)
   }
   messagingInstance = firebase.messaging()
@@ -26,7 +26,7 @@ const deleteFcmToken = () => {
 }
 
 const firebaseLogout = () => {
-  if (firebase.auth().currentUser) {
+  if (config.firebase.enabled && firebase.auth().currentUser) {
     return firebase.auth().signOut()
   }
   return Promise.resolve(true)
