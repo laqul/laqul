@@ -10,10 +10,14 @@ export default {
     tokenName: 'Laqul',
     refreshTokenMargin: 30
   },
+  socialLogin: {
+    facebook: false,
+    google: false
+  },
   firebase: {
-    enabled: true,
+    enabled: false,
     fcm: { // Firebase Cloud Messaging
-      enabled: true, // Activa la funcion de notificaciones en la aplicacion
+      enabled: false, // Activa la funcion de notificaciones en la aplicacion, requiere firebase.enabled = true
       maxNotifications: 10 // Numero de notificaciones en la aplicacion (maximo 20)
     },
     config: {
@@ -26,6 +30,7 @@ export default {
     }
   },
   language: {
+    default: 'es',
     multilanguage: true,
     languages: [
       { name: 'Espanol', active: true, code: 'es' },
