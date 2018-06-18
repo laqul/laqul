@@ -16,7 +16,7 @@ const setObjectToken = (response) => {
 }
 
 const firebaseLogin = (token) => {
-  if (token.firebase_token) {
+  if (token.firebase_token && config.firebase.enabled) {
     return firebase.auth().signInWithCustomToken(token.firebase_token)
       .then(user => Promise.resolve({firebaseUser: user, token}))
   } else {
