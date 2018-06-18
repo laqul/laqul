@@ -37,7 +37,7 @@ export const askForPermission = () => {
 }
 
 export default () => {
-  if (!config.firebase.fcm.enabled) {
+  if (!config.firebase.enabled || !config.firebase.fcm.enabled) {
     return Promise.resolve(true)
   }
   if (!initialized) {
