@@ -11,14 +11,11 @@
     <link rel="icon" href="statics/laqul-logo.png" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="statics/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="statics/icons/favicon-16x16.png">
-
   </head>
   <body>
-    <% if (!htmlWebpackPlugin.options.ctx.mode.electron) { %>
-      <noscript>
-        This is your fallback content in case JavaScript fails to load.
-      </noscript>
-    <% } %>
+    <noscript>
+      This is your fallback content in case JavaScript fails to load.
+    </noscript>
 
     <!-- DO NOT touch the following <div> -->
     <div id="q-app"></div>
