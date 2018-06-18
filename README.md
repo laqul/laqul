@@ -174,7 +174,7 @@ You are done! make something awesome!
 > Spelling and grammar correction are welcome :+1:
 
 ## Frameworks Used
-* Quasar 0.15: [Official Documentation](http://quasar-framework.org)
+* Quasar 0.16: [Official Documentation](http://quasar-framework.org)
 * Laravel 5.6: [Official Documentation](https://laravel.com/docs/5.6)
 
 ## GraphQL
