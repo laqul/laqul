@@ -112,6 +112,8 @@ module.exports = function (ctx) {
     animations: [
     ],
     pwa: {
+      // workboxPluginMode: 'InjectManifest',
+      // workboxOptions: {},
       manifest: {
         name: 'Laqul App',
         short_name: 'Laqul-PWA',
@@ -153,10 +155,13 @@ module.exports = function (ctx) {
       // id: 'org.cordova.quasar.app'
     },
     electron: {
+      // bundler: 'builder', // or 'packager'
       extendWebpack (cfg) {
-        // do something with cfg
+        // do something with Electron process Webpack cfg
       },
       packager: {
+        // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
+
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
@@ -165,9 +170,12 @@ module.exports = function (ctx) {
 
         // Window only
         // win32metadata: { ... }
+      },
+      builder: {
+        // https://www.electron.build/configuration/configuration
+
+        // appId: 'quasar-app'
       }
-    },
-    // leave this here for Quasar CLI
-    starterKit: '1.0.2'
+    }
   }
 }
