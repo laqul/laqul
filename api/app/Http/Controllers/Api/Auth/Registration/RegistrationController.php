@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Api\Auth\Registration;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Validator;
-use Illuminate\Validation\Rule;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\DB;
-use App\Models\Auth\Registration\EmailVerification;
 use App\Models\User\User;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
+use App\Models\Auth\Registration\EmailVerification;
 
 class RegistrationController extends Controller
 {

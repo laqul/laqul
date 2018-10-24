@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Api\Traits;
 
+use FCM;
+use Carbon\Carbon;
 use App\Models\User\User;
+use App\Models\User\Notification;
+use App\Models\User\MessagingToken;
 use LaravelFCM\Message\OptionsBuilder;
 use LaravelFCM\Message\PayloadDataBuilder;
 use LaravelFCM\Message\PayloadNotificationBuilder;
-use FCM;
-use Carbon\Carbon;
-use App\Models\User\MessagingToken;
-use App\Models\User\Notification;
 
 trait Notifications
 {

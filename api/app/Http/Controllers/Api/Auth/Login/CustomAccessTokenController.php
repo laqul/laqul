@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Api\Auth\Login;
 
-use Psr\Http\Message\ServerRequestInterface;
-use Laravel\Passport\Http\Controllers\AccessTokenController;
 use Firebase\JWT\JWT;
 use Laravel\Passport\Passport;
+use Psr\Http\Message\ServerRequestInterface;
+use Laravel\Passport\Http\Controllers\AccessTokenController;
 
 class CustomAccessTokenController extends AccessTokenController
 {

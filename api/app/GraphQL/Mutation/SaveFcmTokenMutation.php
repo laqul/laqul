@@ -2,12 +2,12 @@
 
 namespace App\GraphQL\Mutation;
 
+use Auth;
+use GraphQL;
+use GraphQL\Type\Definition\Type;
+use App\Models\User\MessagingToken;
 use Folklore\GraphQL\Support\Mutation;
 use GraphQL\Type\Definition\ResolveInfo;
-use GraphQL\Type\Definition\Type;
-use GraphQL;
-use Auth;
-use App\Models\User\MessagingToken;
 
 class SaveFcmTokenMutation extends Mutation
 {

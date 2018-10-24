@@ -2,12 +2,12 @@
 
 namespace App\GraphQL\Mutation;
 
+use Auth;
+use GraphQL;
+use GraphQL\Type\Definition\Type;
+use Illuminate\Support\Facades\DB;
 use Folklore\GraphQL\Support\Mutation;
 use GraphQL\Type\Definition\ResolveInfo;
-use GraphQL\Type\Definition\Type;
-use GraphQL;
-use Auth;
-use Illuminate\Support\Facades\DB;
 
 class LogoutMutation extends Mutation
 {

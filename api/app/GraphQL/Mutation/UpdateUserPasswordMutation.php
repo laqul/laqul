@@ -2,13 +2,13 @@
 
 namespace App\GraphQL\Mutation;
 
-use Folklore\GraphQL\Support\Mutation;
-use GraphQL\Type\Definition\ResolveInfo;
-use GraphQL\Type\Definition\Type;
+use Auth;
+use Hash;
 use GraphQL;
 use Validator;
-use Hash;
-use Auth;
+use GraphQL\Type\Definition\Type;
+use Folklore\GraphQL\Support\Mutation;
+use GraphQL\Type\Definition\ResolveInfo;
 
 class UpdateUserPasswordMutation extends Mutation
 {
