@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Api\Auth\ResetPassword;
 
+use App\Models\User\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Mail\ForgotPassword;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\DB;
-use App\Models\User\User;
-use App\Models\Auth\PasswordReset\PasswordReset;
-use App\Mail\ForgotPassword;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Auth\PasswordReset\PasswordReset;
 
 class ForgotController extends Controller
 {

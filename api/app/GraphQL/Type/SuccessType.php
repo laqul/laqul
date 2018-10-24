@@ -2,9 +2,9 @@
 
 namespace App\GraphQL\Type;
 
+use GraphQL;
 use GraphQL\Type\Definition\Type;
 use Folklore\GraphQL\Support\Type as BaseType;
-use GraphQL;
 
 class SuccessType extends BaseType
 {

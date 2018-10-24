@@ -2,10 +2,10 @@
 
 namespace App\GraphQL\Type;
 
+use Auth;
+use GraphQL;
 use GraphQL\Type\Definition\Type;
 use Folklore\GraphQL\Support\Type as BaseType;
-use GraphQL;
-use Auth;
 
 class UserType extends BaseType
 {

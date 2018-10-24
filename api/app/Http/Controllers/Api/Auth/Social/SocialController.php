@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\Api\Auth\Social;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Socialite;
 use Validator;
-use Illuminate\Validation\Rule;
 use App\Models\User\User;
-use App\Models\Auth\Social\SocialAccount;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Route;
+use App\Models\Auth\Social\SocialAccount;
 
 class SocialController extends Controller
 {

@@ -2,13 +2,13 @@
 
 namespace App\GraphQL\Mutation;
 
+use Auth;
+use Image;
+use GraphQL;
+use Validator;
+use GraphQL\Type\Definition\Type;
 use Folklore\GraphQL\Support\Mutation;
 use GraphQL\Type\Definition\ResolveInfo;
-use GraphQL\Type\Definition\Type;
-use GraphQL;
-use Image;
-use Validator;
-use Auth;
 
 class UpdateUserAvatarMutation extends Mutation
 {

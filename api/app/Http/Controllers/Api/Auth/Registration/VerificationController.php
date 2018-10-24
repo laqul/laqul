@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Api\Auth\Registration;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\Controller;
 use App\Models\Auth\Registration\EmailVerification;
 use App\Mail\EmailVerification as EmailVerificationCode;
-use Illuminate\Support\Facades\Mail;
 
 class VerificationController extends Controller
 {

@@ -2,11 +2,11 @@
 
 namespace App\GraphQL\Query;
 
+use Auth;
+use GraphQL;
+use GraphQL\Type\Definition\Type;
 use Folklore\GraphQL\Support\Query;
 use GraphQL\Type\Definition\ResolveInfo;
-use GraphQL\Type\Definition\Type;
-use GraphQL;
-use Auth;
 use Folklore\GraphQL\Support\Traits\ShouldValidate;
 
 class UserNotificationsQuery extends Query
