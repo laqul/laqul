@@ -52,6 +52,9 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+            'modes'  => [
+                'NO_ENGINE_SUBSTITUTION',
+            ],
         ],
 
         'pgsql' => [
